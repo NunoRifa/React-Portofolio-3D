@@ -59,7 +59,7 @@ const WorksCard = ({
 const Works = () => {
   const Projects =
     projects.length === 0 ? (
-      <div className="mt-20 flex justify-center items-center gap-7">
+      <div className="mt-5 flex justify-center items-center bg-tertiary p-5 rounded-2xl">
         <div className="text-white font-bold text-[17px]">
           Something went wrong!
         </div>
@@ -90,6 +90,7 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
+
       {Projects}
     </>
   );
