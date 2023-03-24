@@ -11,7 +11,6 @@ import css from "./tech/css.png";
 import xd from "./tech/adobexd.svg";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
@@ -27,8 +26,6 @@ import canikid from "./company/cantikid.png";
 import sci from "./company/sci.png";
 
 import shayna from "./nuno-rifa_shayna.png";
-import giri from "./nuno-rifa_giri.jpg";
-import cantikidproj from "./nuno-rifa_cantikid.png";
 
 export {
   logo,
@@ -43,7 +40,6 @@ export {
   xd,
   figma,
   git,
-  html,
   javascript,
   nodejs,
   reactjs,
@@ -57,6 +53,4 @@ export {
   canikid,
   sci,
   shayna,
-  giri,
-  cantikidproj,
 };

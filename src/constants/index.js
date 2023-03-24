@@ -4,7 +4,6 @@ import {
   creator,
   web,
   javascript,
-  html,
   css,
   xd,
   reactjs,
@@ -12,10 +11,10 @@ import {
   tailwind,
   nodejs,
   php,
-  git,
-  figma,
   threejs,
   svelte,
+  git,
+  figma,
   mugan,
   canikid,
   sci,
@@ -53,10 +52,6 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
   {
     name: "CSS 3",
     icon: css,
