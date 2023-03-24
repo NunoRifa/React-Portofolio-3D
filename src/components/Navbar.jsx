@@ -8,10 +8,27 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${
+        styles.paddingX
+      } w-full flex item-center py-5 fixed top-0 z-20 ease-out duration-100 ${
+        scrollTop > 50 ? "bg-primary" : "bg-transparent"
+      }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -22,9 +39,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt="logo" className="w-10 h-10 object-contain" /> */}
+          <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Nuno &nbsp;<span className="sm:block hidden">| ReactJS Dev</span>
+            Nuno &nbsp;
+            <span className="sm:block hidden">| ReactJS Dev</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
