@@ -57,6 +57,20 @@ const WorksCard = ({
 };
 
 const Works = () => {
+  const Projects =
+    projects.length === 0 ? (
+      <div className="mt-20 flex justify-center items-center gap-7">
+        <div className="text-white font-bold text-[17px]">
+          Something went wrong!
+        </div>
+      </div>
+    ) : (
+      <div className="mt-20 flex flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <WorksCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+    );
   return (
     <>
       <motion.div>
@@ -76,12 +90,7 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <WorksCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
+      {Projects}
     </>
   );
 };
