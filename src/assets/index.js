@@ -20,6 +20,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import php from "./tech/php.svg";
+import svelte from "./tech/svelte.svg";
 
 import mugan from "./company/mugantech.png";
 import canikid from "./company/cantikid.png";
@@ -51,6 +52,7 @@ export {
   typescript,
   threejs,
   php,
+  svelte,
   mugan,
   canikid,
   sci,

@@ -15,6 +15,7 @@ import {
   git,
   figma,
   threejs,
+  svelte,
   mugan,
   canikid,
   sci,
@@ -42,12 +43,12 @@ const services = [
     icon: web,
   },
   {
-    title: "Back End Developer",
-    icon: mobile,
-  },
-  {
     title: "Front End Developer",
     icon: creator,
+  },
+  {
+    title: "Back End Developer",
+    icon: mobile,
   },
 ];
 
@@ -63,6 +64,10 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "SvelteJS",
+    icon: svelte,
   },
   {
     name: "React JS",
@@ -110,10 +115,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "2020 - 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining web applications using PHP and other related technologies.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+      "Create database designs and develop data models to ensure good integration between Front End and Back End.",
+      "Implement security techniques such as input validation, data encryption, and setting permissions.",
+      "Identify and fix bugs or errors in apps or websites.",
     ],
   },
   {
@@ -123,10 +130,15 @@ const experiences = [
     iconBg: "#383E56",
     date: "2021 - 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Develop an attractive and easy-to-use user interface leveraging HTML, CSS and JavaScript.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+      "Ensuring websites or applications are made responsive and accessible from various devices such as desktops, laptops, tablets and cellphones.",
+      "Create clean, structured code that is easy for other development teams to learn and maintain.",
+      "Optimizing websites or applications for better speed and performance, such as reducing load times and fixing error issues with websites.",
+      "Coordinate with the design team to produce designs that suit the goals and needs of users.",
+      "Implement and integrate APIs with websites or applications to enhance their functionality.",
+      "Use tools like Git to manage code versioning and collaboration with other development teams.",
     ],
   },
   {
@@ -136,10 +148,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collect data from various sources and prepare it for analysis and creating stored procedures.",
+      "Setting up and running data pipelines for processing, aggregating, cleaning, and validating data.",
+      "Monitor the system and take corrective action when problems occur.",
+      "Optimize data performance and ensure data can be accessed and processed quickly.",
     ],
   },
 ];
