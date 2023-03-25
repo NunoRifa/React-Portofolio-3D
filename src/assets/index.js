@@ -10,8 +10,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import xd from "./tech/adobexd.svg";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";
@@ -38,8 +36,6 @@ export {
   menu,
   close,
   css,
-  xd,
-  figma,
   git,
   javascript,
   nodejs,

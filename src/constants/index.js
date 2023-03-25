@@ -5,7 +5,6 @@ import {
   web,
   javascript,
   css,
-  xd,
   reactjs,
   redux,
   tailwind,
@@ -14,7 +13,6 @@ import {
   threejs,
   svelte,
   git,
-  figma,
   mugan,
   canikid,
   sci,
@@ -90,14 +88,6 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "adobexd",
-    icon: xd,
   },
 ];
 
