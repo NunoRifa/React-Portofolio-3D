@@ -1,36 +1,20 @@
-import { BrowserRouter } from "react-router-dom";
+import React, { Suspense } from "react";
 
-import {
-  About,
-  Contact,
-  Experience,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-  Footer,
-} from "./components";
+import { loader } from "./assets";
+
+const PageLoading = () => (
+  <div className="flex justify-center items-center h-[100vh] bg-white">
+    <img src={loader} alt="loading" className="w-[200px] h-[200px]" />
+  </div>
+);
 
 const App = () => {
+  const LazyComponent = React.lazy(() => import("./IndexComponents"));
+
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-          <Footer />
-        </div>
-      </div>
-    </BrowserRouter>
+    <Suspense fallback={<PageLoading />}>
+      <LazyComponent />
+    </Suspense>
   );
 };
 

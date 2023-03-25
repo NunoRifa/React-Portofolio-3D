@@ -1,3 +1,5 @@
+import loader from "./loading.gif";
+
 import logo from "./favicon.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -26,6 +28,7 @@ import canikid from "./company/cantikid.png";
 import sci from "./company/sci.png";
 
 export {
+  loader,
   logo,
   backend,
   creator,
