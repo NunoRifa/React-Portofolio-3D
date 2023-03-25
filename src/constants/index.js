@@ -130,7 +130,7 @@ const experiences = [
     company_name: "PT. Solusi Cipta Integrasi",
     icon: sci,
     iconBg: "#E6DEDD",
-    date: "2023 - Present",
+    date: "2022 - Present",
     points: [
       "Collect data from various sources and prepare it for analysis and creating stored procedures.",
       "Setting up and running data pipelines for processing, aggregating, cleaning, and validating data.",
