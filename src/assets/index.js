@@ -25,8 +25,6 @@ import mugan from "./company/mugantech.png";
 import canikid from "./company/cantikid.png";
 import sci from "./company/sci.png";
 
-import shayna from "./nuno-rifa_shayna.png";
-
 export {
   logo,
   backend,
@@ -52,5 +50,4 @@ export {
   mugan,
   canikid,
   sci,
-  shayna,
 };

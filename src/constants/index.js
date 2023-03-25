@@ -18,7 +18,6 @@ import {
   mugan,
   canikid,
   sci,
-  shayna,
 } from "../assets";
 
 export const navLinks = [
