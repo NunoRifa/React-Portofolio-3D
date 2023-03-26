@@ -12,10 +12,8 @@ const PageLoading = () => (
 const App = () => {
   const LazyComponent = React.lazy(() => import("./IndexComponents"));
 
-  const platform = window.navigator.platform;
-  const detect =
-    platform.toLowerCase().includes("linux ") ||
-    platform.toLowerCase().includes("android");
+  const platform = window.navigator.userAgent;
+  const detect = platform.toLowerCase().includes("android");
 
   return (
     <Suspense fallback={<PageLoading />}>
