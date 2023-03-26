@@ -1,4 +1,5 @@
 import loader from "./loading.gif";
+import error from "./page-error.gif";
 
 import logo from "./favicon.svg";
 import backend from "./backend.png";
@@ -27,6 +28,7 @@ import sci from "./company/sci.png";
 
 export {
   loader,
+  error,
   logo,
   backend,
   creator,
