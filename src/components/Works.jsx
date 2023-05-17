@@ -21,11 +21,11 @@ const WorksCard = ({
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full min-h-[230px]">
+        <div className="relative w-full max-h-[230px]">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full min-h-[230px] object-cover rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
@@ -42,7 +42,9 @@ const WorksCard = ({
         </div>
         <div className="mt-5">
           <h3 className="text-white text-[24px] font-bold">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[14px] max-h-[100px] overflow-hidden cursor-default hover:max-h-full">
+            {description}
+          </p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (

@@ -26,6 +26,8 @@ import mugan from "./company/mugantech.png";
 import canikid from "./company/cantikid.png";
 import sci from "./company/sci.png";
 
+import foodorders from "./food-orders.jpg";
+
 export {
   loader,
   error,
@@ -51,4 +53,5 @@ export {
   mugan,
   canikid,
   sci,
+  foodorders,
 };

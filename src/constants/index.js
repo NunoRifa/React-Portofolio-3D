@@ -16,6 +16,7 @@ import {
   mugan,
   canikid,
   sci,
+  foodorders,
 } from "../assets";
 
 export const navLinks = [
@@ -141,27 +142,19 @@ const experiences = [
 ];
 
 const projects = [
-  // {
-  //   name: "Car Rent",
-  //   description:
-  //     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwind",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: shayna,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "Food Order",
+    description:
+      "Food Order is a website that enables users to conveniently and efficiently order their favorite meals online. With a user-friendly interface, the website offers a wide selection of restaurants and menus for users to choose from. Users can easily browse through various food options, add items to their shopping cart, and arrange delivery or pickup according to their preferences. Food Order provides a seamless and convenient experience for ordering food, ensuring high customer satisfaction and delivering an efficient solution for enjoying delicious meals hassle-free.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: foodorders,
+    source_code_link: "https://foodorders.nunorifa.com/",
+  },
 ];
 
 export { services, technologies, experiences, projects };
