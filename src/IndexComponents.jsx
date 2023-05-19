@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import {
@@ -13,6 +14,16 @@ import {
 } from "./components";
 
 const IndexComponents = () => {
+  useEffect(() => {
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
