@@ -15,12 +15,18 @@ import {
 
 const IndexComponents = () => {
   useEffect(() => {
-    const handleContextMenu = (e) => {
+    const handlerContextMenu = (e) => {
       e.preventDefault();
     };
-    document.addEventListener("contextmenu", handleContextMenu);
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
+
+    const handlerCtrlShiftKey = (e, keyCode) => {
+      return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    };
+
+    document.addEventListener("contextmenu", handlerContextMenu);
+    document.onkeydown = (e) => {
+      if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === "U".charCodeAt(0)))
+        return false;
     };
   }, []);
 
