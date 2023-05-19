@@ -19,10 +19,6 @@ const IndexComponents = () => {
       e.preventDefault();
     };
 
-    const handlerCtrlShiftKey = (e, keyCode) => {
-      return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-    };
-
     document.addEventListener("contextmenu", handlerContextMenu);
     document.onkeydown = (e) => {
       if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === "U".charCodeAt(0)))
