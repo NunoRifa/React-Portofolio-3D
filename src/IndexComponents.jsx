@@ -14,17 +14,17 @@ import {
 } from "./components";
 
 const IndexComponents = () => {
-  useEffect(() => {
-    const handlerContextMenu = (e) => {
-      e.preventDefault();
-    };
+  // useEffect(() => {
+  //   const handlerContextMenu = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    document.addEventListener("contextmenu", handlerContextMenu);
-    document.onkeydown = (e) => {
-      if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === "U".charCodeAt(0)))
-        return false;
-    };
-  }, []);
+  //   document.addEventListener("contextmenu", handlerContextMenu);
+  //   document.onkeydown = (e) => {
+  //     if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === "U".charCodeAt(0)))
+  //       return false;
+  //   };
+  // }, []);
 
   return (
     <BrowserRouter>

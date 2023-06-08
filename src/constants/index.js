@@ -79,14 +79,6 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "PHP",
-    icon: php,
-  },
-  {
     name: "git",
     icon: git,
   },
