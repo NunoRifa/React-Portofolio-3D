@@ -31,7 +31,10 @@ const Tech = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-5">
       {technologies.map((tech, index) => (
-        <div key={tech.name}>
+        <div
+          className="max-[768px]:w-full max-[768px]:px-[3em]"
+          key={tech.name}
+        >
           <TechCard key={tech.name} index={index} {...tech} />
         </div>
       ))}
