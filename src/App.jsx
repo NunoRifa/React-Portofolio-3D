@@ -17,7 +17,8 @@ const App = () => {
 
   return (
     <Suspense fallback={<PageLoading />}>
-      {detect ? <PageError /> : <LazyComponent />}
+      {/* {detect ? <PageError /> : <LazyComponent />} */}
+      <LazyComponent />
     </Suspense>
   );
 };
